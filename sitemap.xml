@@ -3,11 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://osagga.com/about/</loc>
+    <lastmod>2020-09-02T00:00:23-04:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://osagga.com/</loc>
+    <lastmod>2020-09-02T00:00:23-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://osagga.com/posts/hello-world/</loc>
+    <lastmod>2020-09-02T00:00:23-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://osagga.com/tags/hello-world/</loc>
+    <lastmod>2020-09-02T00:00:23-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://osagga.com/posts/</loc>
+    <lastmod>2020-09-02T00:00:23-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://osagga.com/tags/</loc>
+    <lastmod>2020-09-02T00:00:23-04:00</lastmod>
   </url>
   
 </urlset>

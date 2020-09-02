@@ -1,0 +1,24 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on Omar Sagga</title>
+		<link>https://osagga.com/posts/</link>
+		<description>Recent content in Posts on Omar Sagga</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+		<lastBuildDate>Tue, 01 Sep 2020 22:32:23 -0400</lastBuildDate>
+		<atom:link href="https://osagga.com/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Hello World</title>
+			<link>https://osagga.com/posts/hello-world/</link>
+			<pubDate>Tue, 01 Sep 2020 22:32:23 -0400</pubDate>
+			
+			<guid>https://osagga.com/posts/hello-world/</guid>
+			<description>This is the first post, just trying this out, hopefully I write more stuff, stay tuned!</description>
+			<content type="html"><![CDATA[<p>This is the first post, just trying this out, hopefully I write more stuff, stay tuned!</p>
+]]></content>
+		</item>
+		
+	</channel>
+</rss>

@@ -7,9 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Tue, 01 Sep 2020 23:04:04 -0400</lastBuildDate>
     
 	<atom:link href="https://osagga.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>https://osagga.com/about/</link>
+      <pubDate>Tue, 01 Sep 2020 23:04:04 -0400</pubDate>
+      
+      <guid>https://osagga.com/about/</guid>
+      <description>Hello,
+My name is Omar and I look like this I&amp;rsquo;m currently a Software engineer at Arwen (or Commonwealth Crypto), I do all sorts of backend and frontend stuff, mainly with .NET core, so expect a bunch of blog posts about cool things I discover with that framework!
+I got my undergraduate degree from Boston University in Computer Science. I&amp;rsquo;ll update this about page soon with more details about the kind of research that I worked on while at BU.</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://osagga.com/posts/hello-world/</link>
+      <pubDate>Tue, 01 Sep 2020 22:32:23 -0400</pubDate>
+      
+      <guid>https://osagga.com/posts/hello-world/</guid>
+      <description>This is the first post, just trying this out, hopefully I write more stuff, stay tuned!</description>
+    </item>
     
   </channel>
 </rss>
