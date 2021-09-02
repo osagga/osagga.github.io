@@ -6,8 +6,20 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Tue, 01 Sep 2020 22:32:23 -0400</lastBuildDate>
+		<lastBuildDate>Wed, 01 Sep 2021 22:32:23 -0400</lastBuildDate>
 		<atom:link href="https://osagga.com/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>One Year Anniversary</title>
+			<link>https://osagga.com/posts/one-year-anniversary/</link>
+			<pubDate>Wed, 01 Sep 2021 22:32:23 -0400</pubDate>
+			
+			<guid>https://osagga.com/posts/one-year-anniversary/</guid>
+			<description>Hi, It&amp;rsquo;s been an exact year since the first post on this blog! Time really goes by, I had plans to update this blog but got busy apparently. A lot has happened in this year, I got a new job, in a new city! I&amp;rsquo;m not one for traveling often, so I always appreciate a change of scenery :) I also got really interested in quantum physics and string theory, I like the idea of a single equation to explain the universe.</description>
+			<content type="html"><![CDATA[<p>Hi, It&rsquo;s been an exact year since the first post on this blog! Time really goes by, I had plans to update this blog but got busy apparently. A lot has happened in this year, I got a new job, in a new city! I&rsquo;m not one for traveling often, so I always appreciate a change of scenery :) I also got really interested in quantum physics and string theory, I like the idea of a single equation to explain the universe. It&rsquo;s probably a set of variables, with coefficients that define the specific instance of this universe, among other instances. It&rsquo;s also possible that our current math and notations cannot express the complexity/beauty of this universe. For now, I&rsquo;ll stick to learning more complex analysis :D</p>
+<p>I like to end this post with another promise to update this website and add more stuff on the projects and the work I&rsquo;ve done. Take care 👋</p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>Hello World</title>
