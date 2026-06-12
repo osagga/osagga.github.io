@@ -6,14 +6,27 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Wed, 01 Sep 2021 22:22:23 -0400</lastBuildDate>
+		<lastBuildDate>Fri, 12 Jun 2026 12:00:00 -0400</lastBuildDate>
 		<atom:link href="https://osagga.com/posts/index.xml" rel="self" type="application/rss+xml" />
-		
+
+		<item>
+			<title>Long Time No See</title>
+			<link>https://osagga.com/posts/long-time-no-see/</link>
+			<pubDate>Fri, 12 Jun 2026 12:00:00 -0400</pubDate>
+
+			<guid>https://osagga.com/posts/long-time-no-see/</guid>
+			<description>Hello again! 👋 It&amp;rsquo;s been a while, I know I keep promising to update this thing and then I don&amp;rsquo;t, lets see if that changes anytime soon haha Anyway, quick update as always: I got really into the gym! Lost a bunch of weight and even starting boxing a bunch of times a week! overall pretty excited for whatever&amp;rsquo;s next, As always, Take care :)</description>
+			<content type="html"><![CDATA[<p>Hello again! 👋 It&rsquo;s been a while, I know I keep promising to update this thing and then I don&rsquo;t, lets see if that changes anytime soon haha</p>
+<p>Anyway, quick update as always: I got really into the gym! Lost a bunch of weight and even starting boxing a bunch of times a week!</p>
+<p>overall pretty excited for whatever&rsquo;s next, As always, Take care :)</p>
+]]></content>
+		</item>
+
 		<item>
 			<title>One Year Anniversary</title>
 			<link>https://osagga.com/posts/one-year-anniversary/</link>
 			<pubDate>Wed, 01 Sep 2021 22:22:23 -0400</pubDate>
-			
+
 			<guid>https://osagga.com/posts/one-year-anniversary/</guid>
 			<description>Hello! It&amp;rsquo;s been an exact year since the first post on this blog! Time really goes by, I had plans to update this blog but got busy apparently. A lot has happened in this year, I got a new job, in a new city! I&amp;rsquo;m not one for traveling often, so I always appreciate a change of scenery :) I also got really interested in quantum physics and string theory, but turns out I need to learn a lot of complex analysis, so I&amp;rsquo;ll hopefully try to get to that.</description>
 			<content type="html"><![CDATA[<p>Hello! It&rsquo;s been an exact year since the first post on this blog! Time really goes by, I had plans to update this blog but got busy apparently. A lot has happened in this year, I got a new job, in a new city! I&rsquo;m not one for traveling often, so I always appreciate a change of scenery :) I also got really interested in quantum physics and string theory, but turns out I need to learn a lot of complex analysis, so I&rsquo;ll hopefully try to get to that.</p>
@@ -21,17 +34,17 @@
 <p>Take care 👋</p>
 ]]></content>
 		</item>
-		
+
 		<item>
 			<title>Hello World</title>
 			<link>https://osagga.com/posts/hello-world/</link>
 			<pubDate>Tue, 01 Sep 2020 22:32:23 -0400</pubDate>
-			
+
 			<guid>https://osagga.com/posts/hello-world/</guid>
 			<description>This is the first post, just trying this out, hopefully I write more stuff, stay tuned!</description>
 			<content type="html"><![CDATA[<p>This is the first post, just trying this out, hopefully I write more stuff, stay tuned!</p>
 ]]></content>
 		</item>
-		
+
 	</channel>
 </rss>
