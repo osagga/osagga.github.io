@@ -14,29 +14,15 @@ concurrency:
   group: pages
   cancel-in-progress: false
 
-env:
-  # Pinned to the version the site was originally built with.
-  HUGO_VERSION: 0.91.2
-  HUGO_SHA256: e9e2b35ebef6ed41581eb18909b8ee02ee9285d209f7d9ecc5caf5207b7dc8e5
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          fetch-depth: 0 # enableGitInfo needs full history for lastmod dates
 
-      - name: Install Hugo (checksum verified)
-        run: |
-          f="hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz"
-          curl -sSLo "$RUNNER_TEMP/$f" "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/$f"
-          echo "${HUGO_SHA256}  $RUNNER_TEMP/$f" | sha256sum -c -
-          tar -xzf "$RUNNER_TEMP/$f" -C "$RUNNER_TEMP" hugo
-          echo "$RUNNER_TEMP" >> "$GITHUB_PATH"
-
+      # bin/hugo downloads the pinned Hugo version and checks it against its sha256.
       - name: Build
-        run: hugo
+        run: bin/hugo
 
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:

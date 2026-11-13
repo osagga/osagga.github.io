@@ -1,0 +1,41 @@
+#!/bin/sh
+# Runs the exact Hugo version this site is built with. CI uses this too.
+# On first use, it downloads the official release, checks it against the pinned
+# sha256 below, and caches it in .hugo/ (git-ignored).
+#
+#   bin/hugo server -D          preview at http://localhost:1313, drafts included
+#   bin/hugo new posts/foo.md   start a new post
+set -eu
+
+VERSION=0.91.2
+
+case "$(uname -s)-$(uname -m)" in
+  Darwin-arm64)  ASSET="hugo_extended_${VERSION}_macOS-ARM64.tar.gz"
+                 SHA256=2962d84c7e5407186ccb319a8b21db36f5eda023d5444b0d8faec2d3444fb818 ;;
+  Darwin-x86_64) ASSET="hugo_extended_${VERSION}_macOS-64bit.tar.gz"
+                 SHA256=26f61f22fdcbedf0b0720435f793c5fd69d14e012453c442fa66ae05747ee41f ;;
+  Linux-x86_64)  ASSET="hugo_extended_${VERSION}_Linux-64bit.tar.gz"
+                 SHA256=e9e2b35ebef6ed41581eb18909b8ee02ee9285d209f7d9ecc5caf5207b7dc8e5 ;;
+  *) echo "bin/hugo: no pinned Hugo ${VERSION} build for $(uname -s)-$(uname -m)" >&2; exit 1 ;;
+esac
+
+ROOT=$(cd "$(dirname "$0")/.." && pwd)
+BIN="$ROOT/.hugo/$VERSION/hugo"
+
+if [ ! -x "$BIN" ]; then
+  echo "bin/hugo: downloading Hugo ${VERSION}..." >&2
+  TMP=$(mktemp -d)
+  trap 'rm -rf "$TMP"' EXIT
+  curl -fsSL -o "$TMP/$ASSET" "https://github.com/gohugoio/hugo/releases/download/v${VERSION}/${ASSET}"
+  if command -v sha256sum >/dev/null 2>&1; then
+    echo "$SHA256  $TMP/$ASSET" | sha256sum -c - >/dev/null
+  else
+    echo "$SHA256  $TMP/$ASSET" | shasum -a 256 -c - >/dev/null
+  fi
+  tar -xzf "$TMP/$ASSET" -C "$TMP" hugo
+  mkdir -p "$(dirname "$BIN")"
+  mv "$TMP/hugo" "$BIN"
+fi
+
+cd "$ROOT"
+exec "$BIN" "$@"

@@ -3,6 +3,9 @@
 
 {{- $desc := .Description | default (cond .IsPage .Summary .Site.Params.description) }}
 <meta name="description" content="{{ $desc | plainify | htmlUnescape | replaceRE `\s+` " " | truncate 160 }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:image" content="{{ "img/me.jpg" | absURL }}">
+<meta name="twitter:image" content="{{ "img/me.jpg" | absURL }}">
 {{- template "_internal/schema.html" . }}
 {{- template "_internal/opengraph.html" . }}
 {{- template "_internal/twitter_cards.html" . }}
