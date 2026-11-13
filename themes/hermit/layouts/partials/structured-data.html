@@ -1,6 +1,8 @@
 {{/* We use some Hugo built-in templates, you can find their source here: */}}
 {{/* https://github.com/gohugoio/hugo/tree/master/tpl/tplimpl/embedded/templates */}}
 
+{{- $desc := .Description | default (cond .IsPage .Summary .Site.Params.description) }}
+<meta name="description" content="{{ $desc | plainify | htmlUnescape | replaceRE `\s+` " " | truncate 160 }}">
 {{- template "_internal/schema.html" . }}
 {{- template "_internal/opengraph.html" . }}
 {{- template "_internal/twitter_cards.html" . }}
