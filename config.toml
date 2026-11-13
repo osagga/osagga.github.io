@@ -3,7 +3,8 @@ languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "Omar Sagga"
 theme = "hermit"
-enableGitInfo = true
+# Tag pages are off: each post only ever had its own one-off tag.
+disableKinds = ["taxonomy", "term"]
 pygmentsCodefences  = true
 pygmentsUseClasses  = true
 # hasCJKLanguage = true  # If Chinese/Japanese/Korean is your main content language, enable this to make wordCount works right.
@@ -21,10 +22,6 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   # noreferrerLinks = true
   # nofollowLinks = true
 
-[taxonomies]
-  tag = "tags"
-  # Categories are disabled by default.
-
 [params]
   dateform        = "Jan 2, 2006"
   dateformShort   = "Jan 2"
@@ -36,7 +33,7 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   # images = [""]
   themeColor = "#494f5c"
 
-  homeSubtitle = "Hello :wave:"
+  homeSubtitle = "Hello 👋"
   footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
   # bgImg = ""  # Homepage background-image URL
 

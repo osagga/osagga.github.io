@@ -6,6 +6,6 @@ draft: false
 
 Hello,
 
-My name is Omar and I look like this ![Image](/img/me.jpg)
+My name is Omar and I look like this ![Photo of Omar](/img/me.jpg)
 
 I got my undergraduate degree in Computer Science from Boston University. I'll soon update this page with more details about the kind of research that I worked on while at BU. Stay tuned!
