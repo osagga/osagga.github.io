@@ -32,7 +32,7 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   dateformNumTime = "2006-01-02 15:04 -0700"
 
   # Metadata mostly used in document's head
-  # description = ""
+  description = "Omar Sagga's personal website and blog."
   # images = [""]
   themeColor = "#494f5c"
 
@@ -64,8 +64,8 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
     url = "https://linkedin.com/in/osagga"
 
   [[params.social]]
-    name = "twitter"
-    url = "https://twitter.com/osagga"
+    name = "x"
+    url = "https://x.com/osagga"
 
   [[params.social]]
     name = "email"
